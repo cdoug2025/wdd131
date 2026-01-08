@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 2px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template: auto 1fr auto / 4fr auto;
+}
+
+header {
+    grid-column: span 2;
+    background-color: lightgray;
+}
+
+nav {
+    background-color: gray;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color: #006e99;
+}
+
+aside {
+    background-color: rgb(196, 196, 196);
+}
+
+footer {
+    grid-column: span 2;
+    background-color: gray;
+}
