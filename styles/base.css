@@ -90,6 +90,10 @@ h1 {
     margin: 10px;
 }
 
+.card li {
+    margin: 8px 0px;
+}
+
 footer {
     background-color: blue;
     color: white;
