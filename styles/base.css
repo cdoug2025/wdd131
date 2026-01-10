@@ -15,7 +15,7 @@ header {
     padding-top: 10px;
 }
 
-header span {
+#course-title {
     display: block;
 }
 
