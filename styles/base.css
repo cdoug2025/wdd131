@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+header span {
+    display: block;
+}
+
+nav {
+    background-color: darkslategray;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+	text-decoration: none;
+	padding: 1rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: rgb(50, 50, 50);
+    color: yellow;
+}
+
+main {
+    max-width: 42rem;
+    display: grid;
+    justify-self: center;
+    grid-template: auto 1fr / 1.5fr 1fr;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+    grid-column: span 2;
+}
+
+.card {
+    margin: 0 10px;
+    border: solid 1px black;
+    border-radius: 1rem;
+}
+
+.card h2 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 2px 8px;
+    border-bottom: dotted 2px black;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card img {
+    margin-right: 5px;
+}
+
+.card p {
+    margin: 10px;
+}
+
+.card h3 {
+    width: 50%;
+    justify-self: center;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: dotted 1px black;
+}
+
+.card ul {
+    list-style: none;
+    margin: 10px;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 1rem;
+}
+
+footer p {
+    padding: 2px;
+}
+
+.moveright {
+    float: right;
+}
+
+.moveleft {
+    float: left;
+}

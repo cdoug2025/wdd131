@@ -3,11 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Chris Jones</title>
-    <meta name="description" content="Index Content">
+    <title>WDD 131 - Dynamic Web Fundamentals - Chris Jones</title>
+    <meta name="description" content="Home Page for the WDD 131 - Dynamic Web Fundamentals course for Christopher Jones, including About Me and Web Dev Resources">
     <meta name="author" content="Christopher Jones">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    WDD 131 - Chris Jones
+    <header>
+        <span>WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/christopher-jones-51661033a">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/5?lang=eng&id=p14-16#p14">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Christopher Jones</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                <img src="images/profile.jpg" alt="Profile Pic" height="110px" class="moveright">
+                Hi! I'm Chris. I live in Virginia and enjoy playing video games and reading. I got into coding because
+                I wanted to learn to create my own video games, but these classes have opened my mind
+                to a lot more things that involve coding. Take web designing for example! I am
+                looking forward to learning more about coding!
+            </p>
+            <h3>Virginia, USA</h3>
+            <p>
+                <img src="images/va-picture.jpg" alt="Picture of Virginia" height="75px" class="moveleft">
+                I enjoy living in Virginia. It's a nice state with many historical places. Our state tree is the Dogwood
+                and our state bird is the Cardinal. I hope Virginia seems like a nice place to you, too!
+            </p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev.to</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://thistothat.io/tools/lorem-picsum-generator/">Lorum Picsum</a></li>
+                <li><a href="https://flexboxfroggy.com/">Flexbox Froggy</a></li>
+                <li><a href="https://cssgridgarden.com/">CSS Grid Garden</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Christopher Jones | Virginia</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
