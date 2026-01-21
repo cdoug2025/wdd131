@@ -39,7 +39,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	color: #fff;
+	color: white;
 }
 
 .nav a {
@@ -47,7 +47,7 @@ header {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: white;
     font-size: 0.8em;
 }
 
