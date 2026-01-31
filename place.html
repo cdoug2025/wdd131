@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page - Chris Jones</title>
+    <meta name="description" content="Country Page for the WDD 131 - Dynamic Web Fundamentals course for Christopher Jones">
+    <meta name="author" content="Christopher Jones">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Virginia</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 32rem)" srcset="images/va-landscape.webp"> <!--Photo by Mitchell Kmetz-->
+            <img src="images/va-landscape-small.webp" alt="VA Landscape" width="1500" height="750"> <!--Photo by Nathaniel Villaire-->
+        </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 40,767 Square Miles</li>
+                <li>Population: 8.81 Million</li>
+                <li>Capital: Richmond</li>
+                <li>Languages: English</li>
+                <li>Currency (USA): United States Dollar</li>
+                <li>Time Zone: UTC-5 (Eastern)</li>
+                <li>Calling Code (USA): +1</li>
+                <li>InternetTLD (USA): .us</li>
+            </ul>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <img src="images/cloudy.svg" alt="cloudy" width="75rem">
+            <ul>
+                <li>Temperature: 30°F</li>
+                <li>Conditions: Cloudy</li>
+                <li>Wind: 25 mph</li>
+                <li id="wind-chill">Wind Chill: </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Christopher Jones | Virginia</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

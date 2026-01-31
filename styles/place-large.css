@@ -1,0 +1,55 @@
+@media screen and (min-width: 32rem) {
+    :root {
+        --secondary-color: rgba(211, 211, 211, 0.7);
+    }
+
+    main {
+        position: relative;
+    }
+
+    section {
+        position: absolute;
+        padding: 0.4rem 0.8rem;
+    }
+
+    section img {
+        display: none;
+    }
+    
+    h2 {
+        background-color: rgb(175, 0, 0);
+        color: lightgreen;
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    #weather h2::after {
+        content: " ☁️";
+    }
+
+    #weather {
+        bottom: 0.1rem;
+        right: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    #data {
+        top: 0.1rem;
+        left: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 52rem) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    #weather {
+        font-size: 1.4rem;
+    }
+
+    #data {
+        font-size: 1.2rem;
+    }
+}
