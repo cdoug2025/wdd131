@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Chris Jones</title>
+    <meta name="description" content="Product Review Form activity page for WDD131 for Christopher Jones">
+    <meta name="author" content="Christopher Jones">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Review</legend>
+                <label>Product Name
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Please Select &#9662;</option>
+                    </select>
+                </label>
+
+                <div>Overall Rating</div>
+                <label class="radio"><input type="radio" name="overall" id="five" value="five" required>&star;&star;&star;&star;&star;</label>
+                <label class="radio"><input type="radio" name="overall" id="four" value="four" required>&star;&star;&star;&star;</label>
+                <label class="radio"><input type="radio" name="overall" id="three" value="three" required>&star;&star;&star;</label>
+                <label class="radio"><input type="radio" name="overall" id="two" value="two" required>&star;&star;</label>
+                <label class="radio"><input type="radio" name="overall" id="one" value="one" required>&star;</label>
+
+                <label>Installation Date<input type="date" name="installationDate" id="installationDate" required></label>
+
+                <div>What features did you find useful in the product?</div>
+                <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+                <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of use</label>
+                <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+
+                <label>Written Review (Optional)<textarea name="review" id="review" rows="5" cols="40" placeholder="Type your review here..."></textarea></label>
+            
+                <label>Your Name (Optional)<input type="text" name="userName" id="userName"></label>
+
+            </fieldset>
+            <input type="submit" value="Send My Feedback">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Christopher Jones | Virginia</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
