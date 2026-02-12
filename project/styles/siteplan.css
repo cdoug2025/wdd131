@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #0000c3;
+    --secondary-color: #ffbf00;
+    --background-color: #f0f8ff;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+footer {
+    color: var(--background-color);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+h2 {
+    margin: 1.5rem 1rem 0.5rem 1rem;
+    color: var(--primary-color);
+}
+
+main p {
+    margin: 0 1rem;
+}
+
+img {
+    margin: 0 1rem;
+}
+
+/* 
+FB5607 blaze orange
+084B83 yale blue - academics
+51E5FF electric aqua - gaming
+
+
+
+
+
+*/
