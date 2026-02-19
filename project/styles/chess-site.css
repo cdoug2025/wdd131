@@ -224,6 +224,7 @@ form button {
 #game {
     justify-items: center;
     position: relative;
+    text-align: center;
 }
 
 #game h2 {
