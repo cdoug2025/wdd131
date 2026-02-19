@@ -1,0 +1,55 @@
+@media screen and (min-width: 40rem) {
+    
+    /* Header and Footer */
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    /* Header Navigation */
+
+    #menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-self: right;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .nav a {
+        color: var(--backround-color);
+        display: block;
+    }
+
+    /* Main - Index */
+
+    #main-index {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    /* Main - Game */
+
+    #game h2 {
+        font-size: 2.5rem;
+    }
+
+    #chess-board {
+        grid-template: repeat(8, 4rem) / repeat(8, 4rem);
+        gap: 2px;
+    }
+
+    #chess-board button {
+        font-size: 3.4rem;
+    }
+
+    form {
+        justify-self: right;
+        margin: 1rem 4rem
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Chess Game - Chris Jones</title>
+    <meta name="description" content="Chess game page for the final project of WDD131 for Christopher Jones">
+    <meta name="author" content="Christopher Jones">
+    <link rel="stylesheet" href="styles/chess-site.css">
+    <link rel="stylesheet" href="styles/chess-site-large.css">
+    <script src="scripts/chess-site.js" defer></script>
+    <script src="scripts/example.js" defer type="module"></script>
+    <script src="../scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Chess Overview</h1>
+        <button id="menu" aria-label="menu"></button>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="tutorial.html">Tutorial</a>
+            <a href="game.html">Game</a>
+            <a href="#" id="active">Example</a>
+        </nav>
+    </header>
+    <main id="game">
+        <h2>Movement Example Board</h2>
+        <p>
+            Click on a piece to see its movement! No pieces will move on this board.
+            <br><br>
+            &emsp;(Note: Kings are currently showing moves that put them in check)
+        </p>
+        <div id="chess-board"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Christopher Jones | Virginia</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

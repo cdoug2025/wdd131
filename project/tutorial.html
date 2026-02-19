@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Chess Game - Chris Jones</title>
+    <meta name="description" content="Chess game page for the final project of WDD131 for Christopher Jones">
+    <meta name="author" content="Christopher Jones">
+    <link rel="stylesheet" href="styles/chess-site.css">
+    <link rel="stylesheet" href="styles/chess-site-large.css">
+    <script src="scripts/chess-site.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Chess Overview</h1>
+        <button id="menu" aria-label="menu"></button>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="#" id="active">Tutorial</a>
+            <a href="game.html">Game</a>
+            <a href="example.html">Example</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Setup</h2>
+            <p>
+                To set up your chess board, place the board in between you and your opponent, with a white square at the bottom right.
+                You and your opponent each choose a color, and set up your pieces on the two rows of the board nearest each player as follows:<br>
+                &emsp;On the front row or the row that is nearer to your opponent, place your eight pawns.<br>
+                &emsp;On either end of the back row in the corners, place your two rooks.<br>
+                &emsp;Next to your rooks, place your knight.<br>
+                &emsp;Next to your knights, place your bishops.<br>
+                &emsp;In the center square of the back row that matches your color, place the queen.<br>
+                &emsp;Finally, place your king on the final empty square of the back row.<br><br>
+                When finished, your board should look like this:<br>
+                <img src="images/setup.png" alt="Board Setup" height="150" width="150" loading="lazy">
+            </p>
+        </section>
+        <section>
+            <h2>Rules</h2>
+            <p>
+                White goes first, and play alternates. Each turn, you must move one piece according to its rules.
+                You are not allowed to pass your turn. The first player to checkmate the opposing king wins.
+            </p>
+        </section>
+        <section>
+            <h2>General Piece Movement</h2>
+            <p>
+                Most pieces move in a straight line in their given directions,
+                until they run into the edge of the board, run into their own ally pieces,
+                or capture an enemy piece.
+            </p>
+        </section>
+        <section>
+            <h2>King ♔</h2>
+            <p>
+                The king can move a single space in any direction. This is the most important piece.
+                If your king can't get out of danger, you lose. You also can't move your king into danger.<br>
+                <img src="images/king-move.png" alt="King Movement" height="150" width="150" loading="lazy">
+            </p>
+        </section>
+        <section>
+            <h2>Queen ♕</h2>
+            <p>
+                The Queen is the most powerful piece. It can move any number of spaces in any direction.<br>
+                <img src="images/queen-move.png" alt="Queen Movement" height="150" height="150" width="150" loading="lazy">
+            </p>
+        </section>
+        <section>
+            <h2>Rook ♖</h2>
+            <p>
+                The Rook can move any number of spaces in cardinal directions (forward, backward, left, or right).<br>
+                <img src="images/rook-move.png" alt="Rook Movement" height="150" width="150" loading="lazy">
+            </p>
+        </section>
+        <section>
+            <h2>Bishop ♗</h2>
+            <p>
+                The Bishop can move any number of spaces in the diagonal directions.
+                This means that a bishop is always stuck on one color.<br>
+                <img src="images/light-bishop-move.png" alt="Light Bishop Movement" height="150" width="150" loading="lazy">
+                <img src="images/dark-bishop-move.png" alt="Dark Bishop Movement" height="150" width="150" loading="lazy">
+            </p>
+        </section>
+        <section>
+            <h2>Knight ♘</h2>
+            <p>
+                The last two pieces have more unique movement. The knight moves in an L-shaped pattern.
+                It also jumps over pieces, meaning nothing can block it as it moves.
+                It captures enemy pieces it lands on, but can't move to a square occupied by its own ally pieces.
+                One way to remember the knight movement is count 1, 2, then 1. First move two spaces in a cardinal direction.
+                (1, 2). Then make a 90 degree turn (for example, if you started by moving forward, turn left or right) and move one more square. (1).<br>
+                <img src="images/knight-move.png" alt="Knight Movement" height="150" width="150" loading="lazy">
+                <img src="images/knight-move-blocked.png" alt="Knight Jumping Pieces" height="150" width="150" loading="lazy">
+            </p>
+        </section>
+        <section>
+            <h2>Pawn ♙</h2>
+            <p>
+                Finally, the pawn. This is the weakest piece. It can only move one space straight forward unless certain conditions are met 
+                (rememeber that forward is towards your opponent, so black pawns move the opposite way of white pawns!).
+                It also cannot capture pieces moving straight forward. Instead, it captures diagonally forward.
+                The first time a pawn moves, it can move one or two spaces straight forward.
+                It can still only capture one space diagonally forward, though.
+                When the pawn reaches the end of the board, it can promote to a queen, rook, bishop, or knight.<br>
+                <img src="images/white-pawn-move.png" alt="White Pawn Movement" height="150" width="150" loading="lazy">
+                <img src="images/pawn-capture.png" alt="Pawn Capture" height="150" width="150" loading="lazy">
+                <img src="images/pawn-blocked.png" alt="Pawn Blocked" height="150" width="150" loading="lazy">
+                <img src="images/pawn-double.png" alt="Pawn Double Movement" height="150" width="150" loading="lazy">
+            </p>
+        </section>
+        <section>
+            <h2>Castling</h2>
+            <p>
+                There are also two special moves that can be made. First is castling. Considered a king move, it also involves one of your two rooks. There are three requirements for castling:<br>
+                &emsp;First, the king and rook must not have moved yet. You can't move one and then move it back to its starting position, either.<br>
+                &emsp;Second, the spaces between the king and the rook must be clear. You must move all your other pieces out of the way.<br>
+                &emsp;Third, the king cannot be in check, move through check, or end up in check.<br>
+                If all these conditions are met, then you can castle. To castle, take your king and move it two spaces torward the rook you are castling with.
+                Then, put the rook on the square next to the king on the opposite side that it started from. Castling is an important move that can help keep your king out of danger.<br>
+                <img src="images/castle-move.png" alt="Castle Movement" height="150" width="150" loading="lazy">
+                <img src="images/castle-left.png" alt="Castle Left" height="150" width="150" loading="lazy">
+                <img src="images/castle-right.png" alt="Castle Right" height="150" width="150" loading="lazy">
+            </p>
+        </section>
+        <section>
+            <h2>En Passant</h2>
+            <p>
+                The second special move is en passant. It involves one of your own pawns, and one of your opponents pawns that hasn't moved yet.
+                Your pawn would be positioned to capture the enemy pawn if it only moved a single space forward.<br>
+                <img src="images/en-passant-begin.png" alt="Position For En Passant" height="150" width="150" loading="lazy"><br>
+                If the opponent instead moves it two spaces forward during their turn, you may still capture it by pretending it only moved one space, but only on that turn.
+                If you make a different move, you can't capture the pawn in this way during your next turn.<br>
+                <img src="images/en-passant-move.png" alt="En Passant Movement" height="150" width="150" loading="lazy">
+                <img src="images/en-passant-result.png" alt="En Passant Result" height="150" width="150" loading="lazy">
+            </p>
+        </section>
+        <section>
+            <h2>Check and Checkmate, the Goal of the Game</h2>
+            <p>
+                Now that you know how all the pieces move, what is the goal of the game? The goal is to checkmate the enemy king.
+                And what does that mean? First, I'll explain check. When a piece can capture the enemy king on their next move, that king is in check.
+                The checked player must make a move that gets their king out of check. The king cannot, under any circumstances, move into check.<br>
+                There are three ways to get out of check:<br>
+                &emsp;First, you can simply move the king to a safer square.<br>
+                &emsp;Second, you can capture the piece that is putting your king in check.<br>
+                &emsp;Third, you can move one of your pieces in between your king and the opponents piece, blocking the attack.<br>
+                If you are unable to get out of check, it's checkmate and you lose.
+            </p>
+        </section>
+        <section>
+            <h2>Stalemate</h2>
+            <p>
+                To win the game, your opponents king must be in check. Play must also alternate between white and black, and there is no passing turns.
+                So what happens if your opponent can't make a move, but also isn't in check? The game ends in stalemate, or a draw.
+                The game also ends in a draw after the same position is repeated three times (meaning an infinite repetition of moves has likely been reached),
+                or if the only pieces left on the board are the two kings (because the two kings can never get close enough to checkmate each other).
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Christopher Jones | Virginia</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

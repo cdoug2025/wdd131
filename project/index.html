@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Chess Game - Chris Jones</title>
+    <meta name="description" content="Chess game page for the final project of WDD131 for Christopher Jones">
+    <meta name="author" content="Christopher Jones">
+    <link rel="stylesheet" href="styles/chess-site.css">
+    <link rel="stylesheet" href="styles/chess-site-large.css">
+    <script src="scripts/chess-site.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Chess Overview</h1>
+        <button id="menu" aria-label="menu"></button>
+        <nav class="nav">
+            <a href="#" id="active">Home</a>
+            <a href="tutorial.html">Tutorial</a>
+            <a href="game.html">Game</a>
+            <a href="example.html">Example</a>
+        </nav>
+    </header>
+    <main id="main-index">
+        <section>
+            <h2>What Is Chess?</h2>
+            <p>
+                <img src="images/chess-game.png" alt="Chess Game" width="150" height="150">
+                Chess is a fun and popular 2-player strategy game. You can grab a friend to play,
+                or go to one of many places online to play with other people. The rules are pretty simlpe,
+                and the goal of the game is to checkmate your opponents king. Once you learn how the pieces
+                move, you can play a game as long as you have a board and pieces. Chess is fun at a beginner
+                level, but there are also people who aim to master the game. Overall, chess is a quick way
+                to have fun with other people!
+            </p>
+        </section>
+        <aside>
+            <h2>Chess Sites</h2>
+            <ul>
+                <li><a href="https://www.chess.com/">Chess.com</a></li>
+                <li><a href="https://lichess.org/">lichess.org</a></li>
+                <li><a href="https://chess.org/">chess.org</a></li>
+                <li><a href="https://gameknot.com/">GameKnot</a></li>
+            </ul>
+        </aside>
+        <form method="get" action="confirmation.html">
+            <fieldset>
+                <legend>Chess Site Feedback</legend>
+                <h2>How do you like my chess overview? What can I improve?</h2>
+                
+                <label>Your Name<input type="text" name="userName" id="userName" required></label>
+                
+                <fieldset id="radio-set">
+                    <legend>Overall Rating</legend>
+                    <label class="radio"><input type="radio" name="rating" id="five" value="five" required>&star;&star;&star;&star;&star;</label>
+                    <label class="radio"><input type="radio" name="rating" id="four" value="four">&star;&star;&star;&star;</label>
+                    <label class="radio"><input type="radio" name="rating" id="three" value="three">&star;&star;&star;</label>
+                    <label class="radio"><input type="radio" name="rating" id="two" value="two">&star;&star;</label>
+                    <label class="radio"><input type="radio" name="rating" id="one" value="one">&star;</label>
+                </fieldset>
+
+                <label>Feedback<textarea name="feedback" id="feedback" rows="5" cols="40" placeholder="Type your feedback here..."></textarea></label>
+            </fieldset>
+            <button type="submit">Send My Feedback!</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Christopher Jones | Virginia</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

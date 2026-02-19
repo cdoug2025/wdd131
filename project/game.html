@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Chess Game - Chris Jones</title>
+    <meta name="description" content="Chess game page for the final project of WDD131 for Christopher Jones">
+    <meta name="author" content="Christopher Jones">
+    <link rel="stylesheet" href="styles/chess-site.css">
+    <link rel="stylesheet" href="styles/chess-site-large.css">
+    <script src="scripts/chess-site.js" defer></script>
+    <script src="scripts/game.js" defer type="module"></script>
+    <script src="../scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Chess Overview</h1>
+        <button id="menu" aria-label="menu"></button>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="tutorial.html">Tutorial</a>
+            <a href="#" id="active">Game</a>
+            <a href="example.html">Example</a>
+        </nav>
+    </header>
+    <main id="game">
+        <button type="button" id="save">Save Board</button>
+        <button type="button" id="load">Load Board</button>
+        <h2>Chess Game</h2>
+        <p>
+            Work in progress. You can play a game, but check, checkmate, under-promotion (promotion to knight, bishop, rook),
+            castling, and en passant are not implemented. Check back for updates!
+        </p>
+        <div id="chess-board"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Christopher Jones | Virginia</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
